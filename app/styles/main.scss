@@ -1,0 +1,125 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+
+@import 'sass-bootstrap/lib/bootstrap';
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+    padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+    border-bottom: 1px solid #e5e5e5;
+
+    /* Make the masthead heading the same height as the navigation */
+    h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 40px;
+        padding-bottom: 19px;
+    }
+}
+
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+.quick-refresh{
+    height: 35px;
+    width: 100%;
+    text-align: center;
+    padding-top: 7px;
+    &:hover{
+        cursor:pointer;
+        background:#CBCBCB;
+    };
+}
+
+.rss-feed{
+    color: #111;
+    .single-story{
+        padding: 13px 5px 9px 10px;
+
+        .source{            
+            font-size: .7em;
+            display:block;
+            margin-top: -2px;
+             a{color:#999;}
+             .glyphicon{font-size: .7em;}
+             
+        }
+    &:hover{
+        background:#EEE;
+        cursor: e-resize;
+    }
+    }
+}
+
+.sided-feed{
+    height: 100%;
+    position: fixed;
+    overflow: scroll;
+    padding-right: 0;
+}
+
+.source-feed{
+    background: #999;
+    height: 100%;
+    position: fixed;
+    margin-left: 33.33%;
+    padding: 0;
+    overflow-y:scroll;
+    .card{
+        height: 250px;
+        width: 95%;
+        margin: 10px auto 30px;
+        background:#FFF;
+        box-shadow: 20px -5px 50px rgba(0,0,0,0.3);
+        padding: 20px;
+    }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+
+    /* Remove the padding we set earlier */
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
